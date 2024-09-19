@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{ /* selector */
+    /* propiedades:  valores de propiedades  */
+    width: 100%;
+    height: 100vh;
+    /*para poner fonfo de imagen */
+    background: url("../img/bg-header.png");
+    background-size: cover; /* para cubrir toda la pantalla */
+    background-position: center; /* para el foco de la imagen se centre a lo importante */
+
+
+}   
+/* apuntamos a la barra de navegacion que esta dentro de header */
+header nav{
+    
+    /* para colocar un elemento a la par del otro  */
+    display: flex;
+    /* height: 400px; */
+    width: 100%;
+    /* para colocar los elementos en algun lugar de la pantalla */
+    /* para colocar espacio entre elementos */
+    justify-content: space-around;     /* eje x */
+    /* para centrar en la pagina */
+     align-items: center; /* eje y */
+     padding: 30px 0;
+}
+
+header ul a{
+    color: #ffffff; /* color de texto */
+    font-size: 25px; /* tamaño letra */
+    margin: 0 14px;
+    text-decoration: none; /*sin subrayado */
+
+}
+header ul a:hover{
+    border-bottom: 2px solid #ffff; 
+
+}
+#hero{
+    
+    text-align: center;
+    margin-top: 200px;
+    
+}
+#hero h2{
+    color: #eaf647;
+    font-size: 60px;
+
+}
+#hero h1{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 100px;
+
+}
+#hero button{
+    color: #737373;
+    font-size: 32px;
+    background-color: #eaf647;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+
+}
+
+main{
+    width: 100%;
+    padding:  120px 0;
+    background-color: beige;
+    text-align: center;
+}
+
+#planes h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+#planes p{
+    font-size: 22px;
+
+}
+
+#planes .fila{
+/* para acomodar las imagenes */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#planes article{
+    margin: 0 40px;
+    position:  relative;
+}
+#planes article h3{
+    position:  absolute;
+    z-index: 9;
+    top: 110px;
+    text-align: center;
+    color: #eaf647;
+    width: 100%;
+}
+
+#destino h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    color: #eaf647;
+    
+    
+
+}
+
+#destino .fila{
+    /* para acomodar las imagenes */
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+}
+
+#destino article{
+    margin: 0 40px;
+    position:  relative;
+}
+
+#destino article h3{
+    position: 20px;
+    top: 110px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+#destino {
+    background: url("../img/bg-destinos.png");
+}
+
+#contacto{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background: #eaf647;
+
+}
+#contact h2{
+    font-size: 20px;
+}
+#contacto p{
+    font-size: 20px;
+}
+
+#contacto form{
+    width: 50%;
+    margin: 40px auto;
+    
+}
+
+#contacto input,
+#contacto select{
+    width: 40%;
+    padding: 8px 14px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#contacto button{
+    padding: 10px 40px;
+    font-size: 20px;
+    background: #9e9e9e;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-top: 60px;
+    border-color: transparent;
+}
+
+footer{
+    background: #000000;
+    color: #ffff;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
